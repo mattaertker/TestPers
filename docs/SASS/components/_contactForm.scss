@@ -1,0 +1,144 @@
+.contactForm {
+  position: relative;
+
+  &-Container {
+    width: 100%;
+  }
+  &-Group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-formInput {
+      background: transparent;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom: 2px solid $color-black;
+      outline: none;
+      width: 95%;
+      resize: none;
+      @include respond(tab-port) {
+        width: 45%;
+      }
+      height: 5rem;
+      font-size: $fontSize-3;
+      padding-left: 4px ;
+      padding-top: 1rem;
+    }
+    &-formInput:active {
+      caret-color: white;
+    }
+    &-formInput {
+
+    }
+    &-label {
+      font-size: $fontSize-3;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      padding: 2rem;
+    }
+
+  }
+  &-formInput {
+    background: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid $color-black;
+    outline: none;
+    font-family: inherit;
+    width: 95%;
+    height: 5rem;
+    max-height: 15rem;
+    font-size: $fontSize-3;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    resize: none;
+
+  }
+  &-label {
+    font-size: $fontSize-3;
+  }
+  &-submit {
+    padding-bottom: 2rem;
+  }
+}
+.content-item {
+  width: 100%;
+  height: 20rem;
+  display: inline-block;
+}
+
+.ContactPage {
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(to bottom right, $color-primary,$color-secondary);
+
+  &__contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 5rem 0;
+    flex-direction: column;
+  }
+
+  &-header {
+    font-size: $fontSize-3;
+    position: relative;
+    padding: 5rem 2rem 2rem 2rem;
+    @include respond(nav) {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    z-index: 999;
+    color: white;
+  }
+
+  &-headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-container {
+    margin-top: 10rem;
+    width: 100%;
+    @include respond(phone) {
+      margin-top: 25rem;
+    }
+    @include respond(microLuma) {
+      margin-top: 5rem;
+    }
+    @include respond(microLuma2) {
+      margin-top: 25rem;
+    }
+    @include respond(ipadPro) {
+      margin-top: 32rem;
+    }
+    @include respond(ipadPro2) {
+      margin-top: 25rem;
+    }
+    @include respond(nav) {
+      padding-bottom: 25rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    // background-image: url('../user1.jpg');
+    background-image:  linear-gradient(to bottom right, $color-primary,$color-secondary);
+  }
+}

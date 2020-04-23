@@ -1,0 +1,45 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == iconFix {
+    @media only screen and (min-width: 29.38em) { @content };    //470px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (min-width: 37.5em) { @content };    //600px
+  }
+  @if $breakpoint == microLuma {
+    @media only screen and (min-width: 39.9em) { @content };    //639px
+  }
+  @if $breakpoint == microLuma2 {
+    @media only screen and (min-width: 40.1em) { @content };    //641px
+  }
+  @if $breakpoint == nav {
+    @media only screen and (min-width: 48.0em) { @content }; //768
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 56.25em) { @content };     //900px
+  }
+  @if $breakpoint == ipadPro {
+    @media only screen and (min-width: 63.9em) { @content };     //1023px
+  }
+  @if $breakpoint == ipadPro2 {
+    @media only screen and (min-width: 64.1em) { @content };     //1025px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: 75em) { @content };    //1200px
+  }
+  @if $breakpoint == weirdIpad {
+    @media only screen and (min-width: 87.5em) { @content };    //1400px
+  }
+  @if $breakpoint == midBreak {
+    @media only screen and (min-width: 93.75em) { @content };    //1500px
+  }
+  @if $breakpoint == weirdIpad2 {
+    @media only screen and (min-width: 100em) { @content };    //1600px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content };    //1800
+  }
+  @if $breakpoint == superBig-desktop {
+    @media only screen and (min-width: 137.5em) { @content };    //2200
+  }
+
+}

@@ -1,0 +1,36 @@
+.normNav {
+  border: none;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  &__nav {
+    float: right;
+    height: 5rem;
+    opacity: .6;
+    &-bar {
+    }
+  }
+
+  &__item {
+    height: 5rem;
+    border: none;
+    padding: 3rem 2rem;
+    margin-right: 2rem;
+    font-size: $fontSize-2;
+    @include respond(big-desktop) {
+      font-size: $fontSize-2_5;
+    }
+    background-color: inherit;
+	color: $color-white;
+	transition: color .2s;
+  }
+
+  &__item:hover {
+    color: $color-grey-light-1;
+  }
+
+  &__item:focus {
+    outline: none;
+    color: $color-black;
+  }
+}

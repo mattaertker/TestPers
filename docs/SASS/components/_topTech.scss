@@ -1,0 +1,20 @@
+.topTech {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // @include respond(phone) {
+    //     flex-direction: row;
+    // }
+    padding: 3rem 0;
+
+    &-icon {
+        width: 12rem;
+        height: 12rem;
+        background-color: green;
+    }
+
+    &-icons {
+        // display: flex;
+        // flex-direction: row;
+    }
+}

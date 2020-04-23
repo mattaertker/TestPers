@@ -1,0 +1,18 @@
+.text__small {
+  font-size: $default-font-size;
+}
+.text--extraSmall {
+  font-size: $fontSize-small;
+}
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+}
+
+.moveInBottom {
+  animation: moveInBottom 1s ease-in;
+  animation-fill-mode: backwards;
+}

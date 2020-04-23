@@ -1,0 +1,26 @@
+.portfolio__home {
+  width: 100%;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-right {
+    background-color: $color-white;
+    width: 0;
+    @include respond(phone) {
+      width: 15vw;
+    }
+  }
+  &-mid {
+    background-color: $color-grey-light-1;
+    width: 100%;
+    padding: 5rem 0 10rem 0;
+  }
+  &-left {
+    background-color: $color-white;
+    width: 0;
+    @include respond(phone) {
+      width: 15vw;
+    }
+  }
+}

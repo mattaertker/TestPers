@@ -1,0 +1,77 @@
+.footer {
+
+  &__home {
+    width: 100%;
+    height: 40rem;
+    @include respond(iconFix){
+     height: 50rem;
+    }
+    background-image: linear-gradient(to left top, $color-primary, $color-secondary);
+    color: $color-white;
+
+    &-copyright{
+      font-size: 40%;
+      padding: 10rem 2rem 0 2rem;
+      @include respond(iconFix){
+        padding: 20rem 2rem 0 2rem;
+      }
+
+      @include respond(tab-land){
+        font-size: 50%;
+      }
+    }
+
+    &-iconsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+
+      &-icon {
+        height: 2rem;
+        width: 2rem;
+        margin: 10vh 10vw 3rem 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 3rem 0 3rem;
+      }
+    }
+  }
+}
+.icon-container {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &-text {
+
+    color: $color-white;
+    z-index: 100;
+    width: 16rem;
+    //padding: 0 1rem 0 1rem;
+    font-size: 1.5rem;
+    @include respond(phone) {
+      font-size: $fontSize-2;
+      width: 22rem;
+    }
+
+    &-email {
+      width: 10rem;
+      height: 10rem;
+    }
+
+  }
+}
+
+.textContainer {
+  font-size: 1.5rem;
+  text-align: center;
+  @include respond(phone) {
+    font-size: $fontSize-2;
+  }
+}
