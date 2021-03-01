@@ -24,7 +24,7 @@
     "recaptcha": "^1.2.1",
     "simplify": "^1.0.0",
     "simplifyify": "^7.0.7",
-    "three": "^0.110.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
